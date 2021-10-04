@@ -1,0 +1,59 @@
+<div class="header">
+	<div class="block col-md-7 transcriptions">
+	  <button class="btn btn-sm btn-secondary btn-outline-primary dropdown-toggle" id="transcription-list" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Transcriptions
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="transcription-list" x-placement="bottom-start" style="position: absolute; transform: translate3d(15px, 31px, 0px); top: 0px; left: 0px; will-change: transform;">
+	    <a class="dropdown-item" id="transcript-p1">transcript-p1</a>
+     <a class="dropdown-item" id="transcript-p2">transcript-p2</a>
+	    <a class="dropdown-item">+ add transcription </a>
+	  </div>
+	</div>
+    <div class="col-md-4 block snippets">
+		<div class="dropdown">
+		<button class="btn  btn-sm btn-secondary btn-outline-primary dropdown-toggle" id="snippet-list" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Snippets
+		</button>
+		<div class="dropdown-menu" aria-labelledby="snippet-list" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+			<a class="dropdown-item">snippet-p1</a>
+			<a class="dropdown-item">all</a>
+		</div>
+		</div>
+		<div class="dropdown">
+		<button class="btn btn-sm btn-secondary btn-outline-primary dropdown-toggle" id="diagram-list" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Diagrams
+		</button>
+		<div class="dropdown-menu" aria-labelledby="diagram-list" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+			<a class="dropdown-item">worldA</a>
+			<a class="dropdown-item">worldB</a>
+			<a class="dropdown-item">all</a>
+		</div>
+		</div>
+		<button class="btn btn-sm btn-secondary btn-outline-primary">
+			Export as CSV
+		</button>
+        <!-- <a href="#" onclick="downloadCSV({ filename: 'snippet-data.csv' });" __wid="BR4J3ub3">Download as CSV</a> -->
+    </div>
+</div>
+
+
+<div class="content">
+    <iframe class="col-md-8 block left" src="/transcript-p1" id="transcriptionView">
+    </iframe>
+	<!-- Iframe to transclude the database -->
+	<iframe class="col-md-3 block middle" src="/ADQDA-database" id="db"></iframe>
+	<!-- <div class="col-md-1 block right" __wid="7KmsNzW4"></div>-->
+</div>
+
+<div class="modal" id="confirmMsg" data-backdrop="false" tabindex="-1" role="dialog" aria-hidden="true" transient-visible="false">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+		
+		<div class="modal-body">Add theme vis to snippet , <br>please choose a diagram:<div class="list-group"><a class="list-group-item">Tasks</a></div></div>
+		<div class="modal-footer">
+		<button type="button" class="cancel btn btn-secondary" data-dismiss="modal">Cancel</button>
+		<button type="button" class="confirm btn btn-primary">Confirm</button>
+		</div>
+	</div>
+	</div>
+</div>

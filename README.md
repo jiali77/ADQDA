@@ -1,4 +1,5 @@
-#README
+# ADQDA
+## README
 
 ### Background
 ADQDA is a research prototype built on top of Webstrates/Codestrates (https://codestrates.projects.cavi.au.dk/docs/tutorial/), demonstrating the vision of a fluid and holistic qualitative data analysis experience. Details in published Paper: ADQDA: A Cross-device Affinity Diagramming Tool for Fluid and Holistic Qualitative Data Analysis. Proc. ACM Hum.-Comput. Interact.5, ISS, Article 489 (November 2021), 19 pages. https://doi.org/10.1145/3488534
@@ -19,5 +20,3 @@ ADQDA is a research prototype built on top of Webstrates/Codestrates (https://co
 
 
 ### Update Log
-
-# ADQDA
